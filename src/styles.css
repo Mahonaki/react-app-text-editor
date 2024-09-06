@@ -1,6 +1,9 @@
 body {
     background-color: #292929;
 }
+* {
+    font-family: Arial;
+}
 h1, p, #input {
     color: #ffffff;
 }
@@ -22,9 +25,7 @@ h1, p, #input {
     display: flex;
     flex-direction: row;
     gap: 8px;
-}
-.input-wrapper .toggle-wrapper p {
-    margin: 0;
+    align-items: center;
 }
 /* toggle button style */
 .switch {
@@ -58,6 +59,20 @@ h1, p, #input {
     transition: .4s;
     border-radius: 50%;
 }
+.switch input:checked + .slider {
+    background-color: #B049FF;
+}
+.switch input:checked + .slider:before {
+    transform: translateX(12px);
+    background-color: #ffffff;
+}
+.toggle-title {
+    width: max-content;
+    line-height: 30px;
+    margin: 0;
+    cursor: pointer;
+}
+
 /* input field styles */
 #input {
     width: 100%;
@@ -78,6 +93,7 @@ h1, p, #input {
     padding: 10px 20px;
     border-radius: 32px;
     margin-top: 8px;
+    text-decoration: none;
 }
 .button:hover {
     cursor: pointer;
@@ -92,4 +108,9 @@ h1, p, #input {
     position: absolute;
     bottom: 16px;
     right: 16px;
+}
+
+/* settings section style */
+.settings-section {
+    display: block;
 }

@@ -1,8 +1,13 @@
-
+import "./styles.css";
+import { InputField } from "./InputField"
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <>
+      <h1 className="header">Text editor</h1>
+      <InputField />
+    </>
+    
   )
 }
 

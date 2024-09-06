@@ -1,8 +1,8 @@
-export function SettingsTab(props) {
+export function SettingsTab() {
     return (
         <>
-            <section className="settings-section">
-                <h1>Hiiii</h1>
+            <section id="settings-section">
+                <p>Here you can put all the setting stuff you need</p>
             </section>
         </>
     )

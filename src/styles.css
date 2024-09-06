@@ -74,7 +74,7 @@ h1, p, #input {
 }
 
 /* input field styles */
-#input {
+#input, #settings-section {
     width: 100%;
     padding: 16px;
     box-sizing: border-box;
@@ -111,6 +111,9 @@ h1, p, #input {
 }
 
 /* settings section style */
-.settings-section {
-    display: block;
+#settings-section {
+    height: 160px;
+}
+#settings-section p {
+    text-align: center;
 }
